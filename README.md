@@ -11,17 +11,17 @@ SQL,
 XAMPP (local server environment)
 
 Features:
-User registration and login system
-Secure authentication and authorization
-Comment creation and management system
-Database-driven storage of users and comments
-Simple and responsive user interface
+User registration and login system,
+Secure authentication and authorization,
+Comment creation and management system,
+Database-driven storage of users and comments,
+Simple and responsive user interface,
 
 Setup / Installation:
-Install XAMPP
-Place the project folder inside the htdocs directory
-Start Apache and MySQL in XAMPP
-Import the SQL database file into phpMyAdmin
+Install XAMPP,
+Place the project folder inside the htdocs directory,
+Start Apache and MySQL in XAMPP,
+Import the SQL database file into phpMyAdmin,
 Open the project in your browser (e.g. http://localhost/your-project-folder)
 
 Notes:
