@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moja Rakovica - Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+
+    .login-container {
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .login-container:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .login-container h1 {
+      font-size: 32px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .login-container p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 12px 20px 12px 40px; 
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+      transition: border-color 0.3s;
+      position: relative;
+    }
+
+    .input-field:focus {
+      border-color: #f39c12;
+      outline: none;
+    }
+
+    .input-group {
+      position: relative;
+    }
+
+    .input-group i {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: #888;
+    }
+
+    .login-btn {
+      background-color: #f39c12;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      border-radius: 30px;
+      width: 100%;
+      transition: background-color 0.3s, transform 0.2s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #e67e22;
+      transform: scale(1.05);
+    }
+
+    .register-link {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .register-link a {
+      color: #f39c12;
+      text-decoration: none;
+    }
+
+    .register-link a:hover {
+      text-decoration: underline;
+    }
+
+   
+    .background-image {
+      background-image: url('https://via.placeholder.com/1200x800/3498db/ffffff?text=Moja+Rakovica');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    
+    @media only screen and (max-width: 600px) {
+      .login-container {
+        padding: 30px 20px;
+      }
+
+      .login-container h1 {
+        font-size: 28px;
+      }
+
+      .input-field {
+        font-size: 14px;
+      }
+
+      .login-btn {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <div class="background-image"></div>
+
+  
+  <div class="login-container">
+    <form action="login.php" method="post">
+    <h1><i class="fas fa-user-lock"></i> Login</h1>
+    <p>Welcome back to Moja Rakovica! Please login to continue.</p>
+
+    <div class="input-group">
+      <input type="text" class="input-field" placeholder="Username" id="username" name="username" required>
+      <i class="fas fa-user"></i>
+    </div>
+
+    <div class="input-group">
+      <input type="password" class="input-field" placeholder="Password" id="password" name="password"required>
+      <i class="fas fa-lock"></i>
+    </div>
+
+    <button class="login-btn" onclick="login()">Login</button>
+
+    <div class="register-link">
+      <p>Don't have an account? <a href="signup.html">Create one here</a></p>
+    </div>
+  </div>
+</form>
+  <script>
+    function login() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      
+      if (username === "" || password === "") {
+        alert("Please fill in both fields.");
+      } 
+    }
+  </script>
+
+</body>
+</html>
