@@ -4,10 +4,10 @@ Description
 This is a full-stack web application implementing user authentication, authorization, and a comment management system. Users can register, log in securely, and interact through comments.
 
 Technologies Used:
-HTML
-CSS
-JavaScript
-SQL
+HTML,
+CSS,
+JavaScript,
+SQL,
 XAMPP (local server environment)
 
 Features:
